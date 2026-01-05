@@ -6,7 +6,7 @@
     <title>LEENG MARKETING - Food & Beverage Specialist</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Your background image -->
+    <!-- Your background -->
     <style>
         body {
             background-image: url('my-background.jpg');
@@ -35,31 +35,29 @@
             padding: 50px 20px;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 3.2em;
+        h1 { margin: 0; font-size: 3.2em; }
+
+        h2 { color: #f57c00; border-bottom: 4px solid #ffd54f; padding-bottom: 12px; }
+
+        ul { list-style: none; padding-left: 0; }
+
+        ul li { margin: 12px 0; font-size: 1.1em; }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 30px;
         }
 
-        h2 {
-            color: #f57c00;
-            border-bottom: 4px solid #ffd54f;
-            padding-bottom: 12px;
+        .gallery img {
+            max-width: 320px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin: 12px 0;
-            font-size: 1.1em;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.95em;
-        }
+        footer { text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
@@ -86,6 +84,25 @@
                 <li>Wide variety of food ingredients</li>
             </ul>
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
+
+            <!-- Clean product gallery with your new photos (no posters) -->
+            <div class="product-gallery">
+                <h3>Our Popular Products</h3>
+                <div class="gallery">
+                    <figure>
+                        <img src="snow-product.jpg" alt="Snow Ice">
+                        <figcaption>Snow Ice</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="fried-product.jpg" alt="Fried Ice Cream">
+                        <figcaption>Fried Ice Cream</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
+                        <figcaption>Quality Ingredients & Toppings</figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
 
         <section class="hours">
