@@ -52,22 +52,23 @@
         }
 
         .gallery figure {
-            flex: 1 1 45%;           /* Top two photos side by side */
-            max-width: 320px;
+            flex: 1 1 45%;           /* Top two side by side */
+            max-width: 300px;        /* Fixed max width for all cards */
             text-align: center;
         }
 
         .gallery img {
-            max-width: 100%;
-            height: auto;
+            width: 100%;             /* Full width of the figure container */
+            max-width: 300px;        /* All three images same max size */
+            height: auto;            /* Keep proportions */
             border-radius: 12px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .bottom-item {
-            flex-basis: 100%;          /* Bottom item takes full width */
-            max-width: 320px;          /* Same width as top photos */
-            margin: 20px auto 0;       /* Center it with margin */
+            flex-basis: 100%;
+            max-width: 300px;        /* Bottom photo same size as top ones */
+            margin: 20px auto 0;
             text-align: center;
         }
 
@@ -115,7 +116,7 @@
             </ul>
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
 
-            <!-- Gallery: top row side-by-side, bottom centered with button directly below -->
+            <!-- Gallery with all photos same size -->
             <div class="product-gallery">
                 <h3>Our Popular Products</h3>
                 <div class="gallery">
@@ -131,7 +132,7 @@
                         <figcaption>Fried Ice Cream</figcaption>
                     </figure>
 
-                    <!-- Bottom centered: Toppings photo + button directly below -->
+                    <!-- Bottom centered: Toppings + button below -->
                     <div class="bottom-item">
                         <figure>
                             <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
