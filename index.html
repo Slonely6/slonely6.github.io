@@ -6,7 +6,7 @@
     <title>LEENG MARKETING - Food & Beverage Specialist</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- 你的背景檔案 -->
+    <!-- Your background -->
     <style>
         body {
             background-image: url('my-background.jpg');
@@ -43,9 +43,49 @@
 
         ul li { margin: 12px 0; font-size: 1.1em; }
 
-        .gallery { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-top: 30px; }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 30px;
+        }
 
-        .gallery img { max-width: 320px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .gallery figure {
+            flex: 1 1 45%;           /* Top two photos side by side */
+            max-width: 320px;
+            text-align: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .bottom-item {
+            flex-basis: 100%;          /* Bottom item takes full width */
+            max-width: 320px;          /* Same width as top photos */
+            margin: 20px auto 0;       /* Center it with margin */
+            text-align: center;
+        }
+
+        .pdf-link {
+            display: inline-block;
+            margin-top: 15px;
+            background: #f57c00;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .pdf-link:hover {
+            background: #e65100;
+        }
 
         footer { text-align: center; font-size: 0.95em; }
     </style>
@@ -75,23 +115,32 @@
             </ul>
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
 
+            <!-- Gallery: top row side-by-side, bottom centered with button directly below -->
             <div class="product-gallery">
                 <h3>Our Popular Products</h3>
                 <div class="gallery">
+                    <!-- Top left: Snow Ice -->
                     <figure>
-                        <!-- 第一張：雪花冰，用 snow-ice.jpg -->
-                        <img src="snow-ice.jpg" alt="Snow Ice with Various Toppings">
-                        <figcaption>Snow Ice with Various Toppings</figcaption>
+                        <img src="snow-ice.jpg" alt="Snow Ice">
+                        <figcaption>Snow Ice</figcaption>
                     </figure>
+
+                    <!-- Top right: Fried Ice Cream -->
                     <figure>
-                        <!-- 第二張：炸雪糕，用 fried-ice-cream.jpg -->
-                        <img src="fried-ice-cream.jpg" alt="Classic Fried Ice Cream">
-                        <figcaption>Classic Fried Ice Cream</figcaption>
+                        <img src="fried-ice-cream.jpg" alt="Fried Ice Cream">
+                        <figcaption>Fried Ice Cream</figcaption>
                     </figure>
-                    <figure>
-                        <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
-                        <figcaption>Quality Ingredients & Toppings</figcaption>
-                    </figure>
+
+                    <!-- Bottom centered: Toppings photo + button directly below -->
+                    <div class="bottom-item">
+                        <figure>
+                            <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
+                            <figcaption>Quality Ingredients & Toppings</figcaption>
+                        </figure>
+                        <a href="LEENG-MARKETING-Product-Catalog.pdf" target="_blank" class="pdf-link">
+                            See More Products (PDF)
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
