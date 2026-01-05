@@ -6,31 +6,34 @@
     <title>LEENG MARKETING - Food & Beverage Specialist</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- 新增：黃色冰淇淋主題背景 -->
+    <!-- 黃色主題背景：經典黃色冰淇淋重複圖案 -->
     <style>
         body {
-            background-image: url('https://www.shutterstock.com/image-vector/seamless-ice-cream-pattern-delicious-260nw-2605959607.jpg');
-            background-repeat: repeat;           /* 讓圖案重複填滿整個頁面 */
-            background-size: 220px 220px;        /* 調整圖案大小，看起來不會太密或太疏 */
-            background-color: #fff9e6;           /* 備用淺黃色，圖片沒載入時顯示 */
-            background-attachment: fixed;        /* 背景固定，滾動時內容滑動，背景不動（可選） */
+            background-image: url('https://www.shutterstock.com/image-vector/delicious-ice-cream-pattern-texture-260nw-2711812345.jpg');
+            background-repeat: repeat;
+            background-size: 250px 250px;          /* 圖案大小，越大越稀疏 */
+            background-color: #fff9e6;             /* 淺黃備底 */
+            background-attachment: fixed;          /* 背景固定不隨滾動 */
         }
 
-        /* 讓內容區塊有半透明背景，避免文字看不清楚 */
-        main, header, footer {
-            background-color: rgba(255, 255, 255, 0.92);  /* 92% 白色半透明 */
+        /* 內容區塊加半透明白底，讓文字好讀 */
+        header, main, footer {
+            background-color: rgba(255, 255, 255, 0.92);
             border-radius: 12px;
             padding: 30px;
+            margin: 20px auto;
+            max-width: 1000px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
 
         header {
-            background: linear-gradient(to right, #ffd54f, #ffb74d); /* 黃色漸層 header */
-            color: #333;  /* 文字改深色更清楚 */
+            background: linear-gradient(to right, #ffd54f, #ffb74d); /* 黃色漸層 */
+            color: #333;
+            text-align: center;
         }
 
         h2 {
-            color: #f57c00;  /* 更鮮豔的橘黃色，搭配主題 */
+            color: #f57c00;
         }
     </style>
 </head>
@@ -57,23 +60,21 @@
                 <li>Fried Ice Cream</li>
                 <li>Wide variety of food ingredients</li>
             </ul>
-
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
 
-            <!-- Product images -->
             <div class="product-gallery">
                 <h3>Our Popular Products</h3>
                 <div class="gallery">
                     <figure>
-                        <img src="https://i.ytimg.com/vi/78crXtAsDOU/maxresdefault.jpg" alt="Colorful Snow Ice with Toppings">
+                        <img src="https://i.ytimg.com/vi/78crXtAsDOU/maxresdefault.jpg" alt="Snow Ice with Various Toppings">
                         <figcaption>Snow Ice with Various Toppings</figcaption>
                     </figure>
                     <figure>
-                        <img src="https://www.thespruceeats.com/thmb/6R7WBrmuR2W6W5N_V2F5a_Jheek=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fried-ice-cream-recipe-5181226-hero-01-56bf6505360c407998eece1b97865a96.jpg" alt="Fried Ice Cream">
+                        <img src="https://www.thespruceeats.com/thmb/6R7WBrmuR2W6W5N_V2F5a_Jheek=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fried-ice-cream-recipe-5181226-hero-01-56bf6505360c407998eece1b97865a96.jpg" alt="Classic Fried Ice Cream">
                         <figcaption>Classic Fried Ice Cream</figcaption>
                     </figure>
                     <figure>
-                        <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Food Ingredients & Toppings">
+                        <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
                         <figcaption>Quality Ingredients & Toppings</figcaption>
                     </figure>
                 </div>
