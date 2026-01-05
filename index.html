@@ -6,7 +6,7 @@
     <title>LEENG MARKETING - Food & Beverage Specialist</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Your background -->
+    <!-- 背景與樣式 -->
     <style>
         body {
             background-image: url('my-background.jpg');
@@ -36,21 +36,41 @@
         }
 
         .logo {
-            max-width: 250px;           /* Change this number if you want logo bigger/smaller */
+            max-width: 250px;
             height: auto;
-            margin-bottom: 20px;        /* Space between logo and text */
+            margin-bottom: 20px;
             display: block;
             margin-left: auto;
-            margin-right: auto;         /* Centers the logo */
+            margin-right: auto;
         }
 
-        h1 { margin: 0; font-size: 3.2em; }
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 3.2em;
+        }
 
-        h2 { color: #f57c00; border-bottom: 4px solid #ffd54f; padding-bottom: 12px; }
+        .chinese-name {
+            margin: 0;
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #333;
+        }
 
-        ul { list-style: none; padding-left: 0; }
+        h2 {
+            color: #f57c00;
+            border-bottom: 4px solid #ffd54f;
+            padding-bottom: 12px;
+        }
 
-        ul li { margin: 12px 0; font-size: 1.1em; }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 12px 0;
+            font-size: 1.1em;
+        }
 
         .gallery {
             display: flex;
@@ -97,15 +117,21 @@
             background: #e65100;
         }
 
-        footer { text-align: center; font-size: 0.95em; }
+        footer {
+            text-align: center;
+            font-size: 0.95em;
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Your logo centered before the title -->
+        <!-- Logo 置中在上方 -->
         <img src="leengmarketing-logo.jpg" alt="LEENG MARKETING Logo" class="logo">
 
         <h1>LEENG MARKETING</h1>
+        <!-- 華語名稱在英文標題下方 -->
+        <p class="chinese-name">榮昇飲料及食品批發中心</p>
+
         <p>Food and Beverage Consultant in Ampang</p>
     </header>
 
@@ -128,7 +154,6 @@
             </ul>
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
 
-            <!-- Gallery with all photos same size -->
             <div class="product-gallery">
                 <h3>Our Popular Products</h3>
                 <div class="gallery">
