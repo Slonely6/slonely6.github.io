@@ -51,15 +51,28 @@
             margin-top: 30px;
         }
 
-        .gallery img {
+        .gallery figure {
+            flex: 1 1 45%;           /* Top two side by side */
             max-width: 320px;
+            text-align: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
             border-radius: 12px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
+        .bottom-item {
+            flex: 1 1 100%;          /* Bottom item takes full width */
+            text-align: center;
+            margin-top: 20px;
+        }
+
         .pdf-link {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
             background: #f57c00;
             color: white;
             padding: 12px 24px;
@@ -101,32 +114,32 @@
             </ul>
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
 
-            <!-- Updated gallery: top row = snow-ice & fried-ice-cream, bottom = toppings + See More button -->
+            <!-- Updated gallery: top row = snow-ice + fried-ice-cream side by side, bottom = centered toppings + See More button -->
             <div class="product-gallery">
                 <h3>Our Popular Products</h3>
                 <div class="gallery">
-                    <!-- Top left: Snow Ice -->
+                    <!-- Left top: Snow Ice -->
                     <figure>
                         <img src="snow-ice.jpg" alt="Snow Ice">
                         <figcaption>Snow Ice</figcaption>
                     </figure>
 
-                    <!-- Top right: Fried Ice Cream -->
+                    <!-- Right top: Fried Ice Cream -->
                     <figure>
                         <img src="fried-ice-cream.jpg" alt="Fried Ice Cream">
                         <figcaption>Fried Ice Cream</figcaption>
                     </figure>
 
-                    <!-- Bottom: Ingredients + See More button below it -->
-                    <figure style="width: 100%; text-align: center;">
-                        <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
-                        <figcaption>Quality Ingredients & Toppings</figcaption>
-                    </figure>
-
-                    <!-- See More button below the bottom photo -->
-                    <a href="LEENG-MARKETING-Product-Catalog.pdf" target="_blank" class="pdf-link">
-                        See More Products (PDF)
-                    </a>
+                    <!-- Bottom centered: Quality Ingredients + button directly below -->
+                    <div class="bottom-item">
+                        <figure>
+                            <img src="https://shop.pregelamerica.com/content/files/images/landings/toppings2.jpg" alt="Quality Ingredients & Toppings">
+                            <figcaption>Quality Ingredients & Toppings</figcaption>
+                        </figure>
+                        <a href="LEENG-MARKETING-Product-Catalog.pdf" target="_blank" class="pdf-link">
+                            See More Products (PDF)
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
