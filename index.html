@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEENG MARKETING - Food & Beverage Specialist</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- 新增：黃色冰淇淋主題背景 -->
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-vector/seamless-ice-cream-pattern-delicious-260nw-2605959607.jpg');
+            background-repeat: repeat;           /* 讓圖案重複填滿整個頁面 */
+            background-size: 220px 220px;        /* 調整圖案大小，看起來不會太密或太疏 */
+            background-color: #fff9e6;           /* 備用淺黃色，圖片沒載入時顯示 */
+            background-attachment: fixed;        /* 背景固定，滾動時內容滑動，背景不動（可選） */
+        }
+
+        /* 讓內容區塊有半透明背景，避免文字看不清楚 */
+        main, header, footer {
+            background-color: rgba(255, 255, 255, 0.92);  /* 92% 白色半透明 */
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(to right, #ffd54f, #ffb74d); /* 黃色漸層 header */
+            color: #333;  /* 文字改深色更清楚 */
+        }
+
+        h2 {
+            color: #f57c00;  /* 更鮮豔的橘黃色，搭配主題 */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,7 +60,7 @@
 
             <p>We support ice cream shops, restaurants, cafes, and F&B businesses with high-quality ingredients to help your dessert business thrive!</p>
 
-            <!-- Product images - feel free to adjust src if you have your own photos -->
+            <!-- Product images -->
             <div class="product-gallery">
                 <h3>Our Popular Products</h3>
                 <div class="gallery">
