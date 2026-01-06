@@ -6,6 +6,7 @@
     <title>LEENG MARKETING - Food & Beverage Specialist</title>
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Background and styles -->
     <style>
         body {
             background-image: url('my-background.jpg');
@@ -17,7 +18,6 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #333;
         }
-
         header, main, footer {
             background-color: rgba(255, 255, 255, 0.95);
             border-radius: 16px;
@@ -26,14 +26,12 @@
             max-width: 1100px;
             box-shadow: 0 8px 30px rgba(0,0,0,0.15);
         }
-
         header {
             background: linear-gradient(to right, #ffcc00, #ffd54f);
             color: #222;
             text-align: center;
             padding: 50px 20px;
         }
-
         .logo {
             max-width: 250px;
             height: auto;
@@ -42,47 +40,15 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         h1 { margin: 10px 0 5px; font-size: 3.2em; }
-
         .chinese-name { margin: 0; font-size: 1.6em; font-weight: bold; color: #333; }
-
         h2 { color: #f57c00; border-bottom: 4px solid #ffd54f; padding-bottom: 12px; }
-
         ul { list-style: none; padding-left: 0; }
-
         ul li { margin: 12px 0; font-size: 1.1em; }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-
-        .gallery figure {
-            flex: 1 1 45%;
-            max-width: 300px;
-            text-align: center;
-        }
-
-        /* THIS LINE MAKES ALL THREE PHOTOS THE SAME SIZE AND FIT PERFECTLY */
-        .gallery img {
-            width: 100%;
-            height: 400px;           /* Fixed height so both posters look the same */
-            object-fit: cover;       /* Crops nicely without stretching */
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .bottom-item {
-            flex-basis: 100%;
-            max-width: 300px;
-            margin: 20px auto 0;
-            text-align: center;
-        }
-
+        .gallery { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-top: 30px; }
+        .gallery figure { flex: 1 1 45%; max-width: 300px; text-align: center; }
+        .gallery img { width: 100%; max-width: 300px; height: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .bottom-item { flex-basis: 100%; max-width: 300px; margin: 20px auto 0; text-align: center; }
         .pdf-link {
             display: inline-block;
             margin-top: 15px;
@@ -94,15 +60,15 @@
             font-weight: bold;
             transition: background 0.3s;
         }
-
         .pdf-link:hover { background: #e65100; }
-
         footer { text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
     <header>
+        <!-- Fixed logo with correct .png extension -->
         <img src="leengmarketing-logo.png" alt="LEENG MARKETING Logo" class="logo">
+
         <h1>LEENG MARKETING</h1>
         <p class="chinese-name">荣昇饮料及食品批发中心</p>
         <p>Food and Beverage Consultant in Ampang</p>
@@ -134,12 +100,10 @@
                         <img src="snow-ice.jpg" alt="Snow Ice">
                         <figcaption>Snow Ice</figcaption>
                     </figure>
-
                     <figure>
                         <img src="fried-ice-cream.jpg" alt="Fried Ice Cream">
                         <figcaption>Fried Ice Cream</figcaption>
                     </figure>
-
                     <div class="bottom-item">
                         <figure>
                             <img src="Boba-Tea.jpg" alt="Quality Ingredients & Toppings">
@@ -169,7 +133,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
