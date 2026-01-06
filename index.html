@@ -18,7 +18,6 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #333;
         }
-
         header, main, footer {
             background-color: rgba(255, 255, 255, 0.95);
             border-radius: 16px;
@@ -27,14 +26,12 @@
             max-width: 1100px;
             box-shadow: 0 8px 30px rgba(0,0,0,0.15);
         }
-
         header {
             background: linear-gradient(to right, #ffcc00, #ffd54f);
             color: #222;
             text-align: center;
             padding: 50px 20px;
         }
-
         .logo {
             max-width: 250px;
             height: auto;
@@ -43,48 +40,33 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         h1 { margin: 10px 0 5px; font-size: 3.2em; }
-
         .chinese-name { margin: 0; font-size: 1.6em; font-weight: bold; color: #333; }
-
         h2 { color: #f57c00; border-bottom: 4px solid #ffd54f; padding-bottom: 12px; }
-
         ul { list-style: none; padding-left: 0; }
-
         ul li { margin: 12px 0; font-size: 1.1em; }
-
         .gallery { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-top: 30px; }
-
         .gallery figure { flex: 1 1 45%; max-width: 300px; text-align: center; }
-
         .gallery img { width: 100%; max-width: 300px; height: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-
         .bottom-item { flex-basis: 100%; max-width: 300px; margin: 20px auto 0; text-align: center; }
-
-        .whatsapp-button {
+        .pdf-link {
             display: inline-block;
             margin-top: 15px;
-            background: #25D366; /* WhatsApp green */
+            background: #f57c00;
             color: white;
             padding: 12px 24px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1em;
             transition: background 0.3s;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-
-        .whatsapp-button:hover {
-            background: #20b358; /* Darker green on hover */
-        }
-
+        .pdf-link:hover { background: #e65100; }
         footer { text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
     <header>
+        <!-- Fixed logo with correct .png extension -->
         <img src="leengmarketing-logo.png" alt="LEENG MARKETING Logo" class="logo">
 
         <h1>LEENG MARKETING</h1>
@@ -97,12 +79,6 @@
             <h2>Contact Us</h2>
             <p><strong>Address:</strong> 5 Jalan 3/1, Taman Sri Merdeka, Ampang, 68000 Kuala Lumpur, Selangor</p>
             <p><strong>Phone:</strong> 01x-xxx xxxx / 01x-xxx xxxx / 01x xxx xxxx</p>
-
-            <!-- New green WhatsApp button below phone number -->
-            <a href="https://wa.me/601xxxxxxxxx" target="_blank" class="whatsapp-button">
-                Chat on WhatsApp
-            </a>
-
             <p><strong>WhatsApp:</strong> Same as phone numbers (Feel free to add us for inquiries)</p>
             <p>We offer wholesale consultation, fast quotations, and delivery services. Contact us anytime!</p>
         </section>
@@ -134,7 +110,7 @@
                             <figcaption>Quality Ingredients & Toppings</figcaption>
                         </figure>
                         <a href="LEENG-MARKETING-Product-Catalog.pdf" target="_blank" class="pdf-link">
-                            See More Products (PDF)
+                            See More Products
                         </a>
                     </div>
                 </div>
