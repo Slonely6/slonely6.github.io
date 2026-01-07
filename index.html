@@ -61,28 +61,24 @@
             transition: background 0.3s;
         }
         .pdf-link:hover { background: #e65100; }
-        footer { text-align: center; font-size: 0.95em; }
+        .shopee-icon {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        footer { text-align: center; font-size: 0.95em; margin-top: 20px; }
     </style>
 </head>
 <body>
     <header>
-        <!-- Fixed logo with correct .png extension -->
         <img src="leengmarketing-logo.png" alt="LEENG MARKETING Logo" class="logo">
-
         <h1>LEENG MARKETING</h1>
         <p class="chinese-name">荣昇饮料及食品批发中心</p>
         <p>Food and Beverage Consultant in Ampang</p>
     </header>
 
     <main>
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p><strong>Address:</strong> 5 Jalan 3/1, Taman Sri Merdeka, Ampang, 68000 Kuala Lumpur, Selangor</p>
-            <p><strong>Phone:</strong> 01x-xxx xxxx / 01x-xxx xxxx / 01x xxx xxxx</p>
-            <p><strong>WhatsApp:</strong> Same as phone numbers (Feel free to add us for inquiries)</p>
-            <p>We offer wholesale consultation, fast quotations, and delivery services. Contact us anytime!</p>
-        </section>
-
         <section class="about">
             <h2>What We Do</h2>
             <p>LEENG MARKETING specializes in food & beverage wholesale and consulting services. Our main products include:</p>
@@ -119,16 +115,29 @@
 
         <section class="hours">
             <h2>Operating Hours</h2>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li><strong>Sunday:</strong> Closed</li>
-                <li><strong>Monday – Friday:</strong> 9:00 AM – 5:00 PM</li>
-                <li>
-                    <strong>Saturday:</strong>
-                    <span style="color: #f57c00; font-weight: bold;">9:00 AM – 12:30 PM (Half Day)</span>
-                </li>
-            </ul>
-        </section>    
+            <table>
+                <tr><td>Sunday</td><td>Closed</td></tr>
+                <tr><td>Monday – Friday</td><td>9:00 AM – 5:00 PM</td></tr>
+                <tr><td>Saturday</td><td>9:00 AM – 12:30 PM</td></tr>
+            </table>
+        </section>
     </main>
+
+    <!-- Moved Contact Us section to bottom, before footer copyright -->
+    <section class="contact" style="margin-top: 40px;">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 5 Jalan 3/1, Taman Sri Merdeka, Ampang, 68000 Kuala Lumpur, Selangor</p>
+        <p><strong>Phone:</strong> 01x-xxx xxxx / 01x-xxx xxxx / 01x xxx xxxx</p>
+        <p>
+            <strong>Shopee Store:</strong> 
+            <a href="https://shopee.com.my/choomoi#product_list" target="_blank" style="text-decoration: none; color: #ee4d2d;">
+                <img src="https://img.icons8.com/color/48/000000/shopee.png" alt="Shopee" class="shopee-icon">
+                Visit our Shopee Store
+            </a>
+        </p>
+        <p><strong>WhatsApp:</strong> Same as phone numbers (Feel free to add us for inquiries)</p>
+        <p>We offer wholesale consultation, fast quotations, and delivery services. Contact us anytime!</p>
+    </section>
 
     <footer>
         <p>© 2026 LEENG MARKETING. All Rights Reserved.</p>
@@ -136,4 +145,3 @@
     </footer>
 </body>
 </html>
-
